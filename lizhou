@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>李洲个人网站</title>
+  <style>
+    /* 在这里添加CSS样式 */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #ddd;
+      padding: 10px 20px;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+    nav ul li a:hover {
+      color: #ff6600;
+    }
+    main {
+      padding: 20px;
+      background-color: #fff;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 20px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    .profile {
+      margin: 20px 0;
+      text-align: center;
+    }
+    .profile img {
+      max-width: 200px;
+      max-height: 200px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>李洲个人网站</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">首页</a></li>
+      <li><a href="#">音乐作品</a></li>
+      <li><a href="#">电影作品</a></li>
+      <li><a href="#">关于李洲</a></li>
+      <li><a href="#">联系方式</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="profile">
+      <h2>个人介绍</h2>
+      <img src="path_to_your_image.jpg" alt="李洲的个人照片">
+      <p>这里是李洲的个人介绍。您可以在这里写一段关于李洲的背景信息、兴趣爱好、职业成就等内容。</p>
+    </section>
+    <section>
+      <h2>音乐作品</h2>
+      <p>这里是李洲的音乐作品列表，可以添加专辑名称、歌曲列表等信息。</p>
+    </section>
+    <section>
+      <h2>电影作品</h2>
+      <p>这里是李洲的电影作品列表，可以添加电影名称、上映时间等信息。</p>
+    </section>
+    <section>
+      <h2>关于李洲</h2>
+      <p>这里是关于李洲的详细介绍，可以写一段关于他的个人资料、成就等信息。</p>
+    </section>
+    <section>
+      <h2>联系方式</h2>
+      <p>如果您希望与他人建立联系，可以在这里提供您的联系方式，如电子邮件、电话、微信等。</p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2024 李洲个人网站
+  </footer>
+</body>
+</html>
