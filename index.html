@@ -97,83 +97,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>洲杰伦个人网站 - 首页</title>
+  <title>洲杰伦个人网站 - 个人简介</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <style>
-    body, h1, h2, h3, p {
-      font-family: 'Roboto', sans-serif;
-    }
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #222;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
+    @import url('../styles.css');
+
     .container {
-      width: 85%;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    header {
-      background-color: #000;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 20px;
+      padding: 2rem;
+      background: #222;
       color: #fff;
-      padding: 1rem;
-      text-align: center;
-      border-bottom: 1px solid #fff;
     }
-    header h1 {
-      margin: 0;
+
+    .section {
+      grid-column: span 12;
     }
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      background: #000;
-      padding: 1rem 0;
-      border-bottom: 1px solid #fff;
-    }
-    nav ul li {
-      margin: 0 20px;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: 700;
-    }
-    nav ul li a:hover, nav ul li a.active {
+
+    .section-title {
+      grid-column: 1 / -1;
+      margin-bottom: 1rem;
       color: #4a90e2;
     }
+
+    .section p {
+      margin-bottom: 1rem;
+    }
+
+    .section-skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .section-skills p {
+      margin-right: 1rem;
+    }
+
     @media (max-width: 768px) {
-      nav ul {
-        flex-direction: column;
-        align-items: center;
-      }
-      nav ul li {
-        margin: 10px 0;
+      .container {
+        grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <header>
-      <h1>洲杰伦个人网站</h1>
-    </header>
-    <nav>
+    <section class="section">
+      <h2 class="section-title">个人信息</h2>
+      <p>姓名：洲杰伦</p>
+      <p>性别：男</p>
+      <p>年龄：30岁</p>
+      <p>籍贯：中国</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">个人简介</h2>
+      <p><strong>专业背景：</strong>洲杰伦是一位资深的品牌设计师，拥有超过15年的行业经验。专注于品牌视觉识别系统（VIS）设计、包装设计以及数字媒体设计。他对设计的每一个细节都追求完美，他的作品不仅在视觉上令人印象深刻，更在商业上为品牌带来显著的成功。</p>
+      <p><strong>技能特长：</strong>精通Adobe Creative Suite，包括Photoshop、Illustrator和InDesign。同时，具备出色的项目管理能力和团队协作精神。他热爱旅行，喜欢从世界各地的艺术和自然中汲取灵感，这使得他的设计作品充满了多样性和国际化视野。</p>
+      <div class="section-skills">
+        <p>熟练掌握Photoshop、Illustrator等设计软件</p>
+        <p>擅长品牌设计、视觉设计、用户界面设计</p>
+        <p>出色的项目管理能力和团队协作精神</p>
+        <p>多元文化和国际化视野</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">教育经历</h2>
+      <p>2009-2013：某知名大学，设计专业，本科</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">工作经验</h2>
+      <p>2015-2018：某知名设计公司，品牌设计师</p>
+      <p>2018-至今：独立设计师，自由职业</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">联系方式</h2>
+      <p>如果您有品牌设计需求或想要了解更多，可以通过以下方式联系洲杰伦：</p>
       <ul>
-        <li><a href="index.html" class="active">首页</a></li>
-        <li><a href="about.html">关于我</a></li>
-        <li><a href="works.html">作品展示</a></li>
-        <li><a href="contact.html">联系方式</a></li>
+        <li>电子邮件：zhou@vip.qq.com</li>
+        <li>电话：188-8888-8888</li>
+        <li>微信：oxoook</li>
       </ul>
-    </nav>
+    </section>
   </div>
 </body>
 </html>
