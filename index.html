@@ -3,19 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>洲杰伦个人网站 - 个人简介</title>
+  <title>洲杰伦个人网站 - 品牌设计师</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <style>
+    /* 基本样式 */
     body, h1, h2, h3, p, a {
       font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
+      transition: all 0.3s ease;
     }
     body {
       background-color: #222;
       color: #fff;
       line-height: 1.6;
     }
+
+    /* 容器样式 */
     .container {
       display: flex;
       flex-direction: column;
@@ -23,6 +27,8 @@
       max-width: 1200px;
       margin: 0 auto;
     }
+
+    /* 导航栏样式 */
     header {
       background-color: #000;
       padding: 1rem;
@@ -34,6 +40,7 @@
       height: 100%;
       border-right: 1px solid #fff;
       overflow-y: auto;
+      z-index: 1000;
     }
     header h1 {
       margin: 0;
@@ -62,8 +69,10 @@
       background-color: #4a90e2;
       color: #fff;
     }
+
+    /* 主内容样式 */
     main {
-      margin-left: 250px;
+      margin-left: 270px; /* 留出导航栏的宽度 */
       padding: 2rem;
       flex-grow: 1;
     }
@@ -89,6 +98,93 @@
       border: 1px solid #4a90e2;
       border-radius: 5px;
     }
+
+    /* 图像轮播样式 */
+    .carousel {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+    }
+    .carousel-images {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .carousel img {
+      width: 100%;
+      max-height: 500px;
+      border-radius: 10px;
+    }
+    .carousel-buttons {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+    .carousel-buttons button {
+      background: rgba(0, 0, 0, 0.5);
+      border: none;
+      color: #fff;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    /* 社交媒体链接样式 */
+    .social-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 1rem;
+    }
+    .social-links a {
+      color: #4a90e2;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .social-links a:hover {
+      color: #fff;
+    }
+
+    /* 联系表单样式 */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .contact-form label {
+      font-weight: 700;
+    }
+    .contact-form input, .contact-form textarea {
+      padding: 0.5rem;
+      border: 1px solid #4a90e2;
+      border-radius: 5px;
+      background: #333;
+      color: #fff;
+    }
+    .contact-form input[type="submit"] {
+      background: #4a90e2;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .contact-form input[type="submit"]:hover {
+      background: #357abd;
+    }
+
+    /* 页脚样式 */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #000;
+      color: #fff;
+      margin-top: 2rem;
+    }
+
+    /* 响应式设计 */
     @media (max-width: 768px) {
       header {
         width: 100%;
@@ -108,25 +204,27 @@
     <h1>洲杰伦个人网站</h1>
     <nav>
       <ul>
-        <li><a href="index.html" class="active">首页</a></li>
-        <li><a href="about.html">关于我</a></li>
-        <li><a href="works.html">作品展示</a></li>
-        <li><a href="contact.html">联系方式</a></li>
+        <li><a href="#home" class="active">首页</a></li>
+        <li><a href="#about">关于我</a></li>
+        <li><a href="#works">作品展示</a></li>
+        <li><a href="#contact">联系方式</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <div class="container">
-      <section class="section">
+      <!-- 首页 -->
+      <section id="home" class="section">
         <h2 class="section-title">个人信息</h2>
         <p>姓名：洲杰伦</p>
-        <p>性别：男</p>
+        <p>职业：品牌设计师</p>
         <p>年龄：25岁</p>
         <p>籍贯：中国</p>
       </section>
 
-      <section class="section">
+      <!-- 关于我 -->
+      <section id="about" class="section">
         <h2 class="section-title">个人简介</h2>
         <p><strong>专业背景：</strong>洲杰伦是一位资深的品牌设计师，拥有超过15年的行业经验。专注于品牌视觉识别系统（VIS）设计、包装设计以及数字媒体设计。他对设计的每一个细节都追求完美，他的作品不仅在视觉上令人印象深刻，更在商业上为品牌带来显著的成功。</p>
         <p><strong>技能特长：</strong>精通Adobe Creative Suite，包括Photoshop、Illustrator和InDesign。同时，具备出色的项目管理能力和团队协作精神。他热爱旅行，喜欢从世界各地的艺术和自然中汲取灵感，这使得他的设计作品充满了多样性和国际化视野。</p>
@@ -138,18 +236,24 @@
         </div>
       </section>
 
-      <section class="section">
-        <h2 class="section-title">教育经历</h2>
-        <p>2009-2013：深圳大学，设计专业，本科</p>
+      <!-- 作品展示 -->
+      <section id="works" class="section">
+        <h2 class="section-title">作品展示</h2>
+        <div class="carousel">
+          <div class="carousel-images">
+            <img src="https://via.placeholder.com/1200x500/4a90e2/fff?text=Design+1" alt="作品1">
+            <img src="https://via.placeholder.com/1200x500/4a90e2/fff?text=Design+2" alt="作品2">
+            <img src="https://via.placeholder.com/1200x500/4a90e2/fff?text=Design+3" alt="作品3">
+          </div>
+          <div class="carousel-buttons">
+            <button id="prevBtn">&#10094;</button>
+            <button id="nextBtn">&#10095;</button>
+          </div>
+        </div>
       </section>
 
-      <section class="section">
-        <h2 class="section-title">工作经验</h2>
-        <p>2015-2018：某知名设计公司，品牌设计师</p>
-        <p>2018-至今：独立设计师，自由职业</p>
-      </section>
-
-      <section class="section">
+      <!-- 联系方式 -->
+      <section id="contact" class="section">
         <h2 class="section-title">联系方式</h2>
         <p>如果您有品牌设计需求或想要了解更多，可以通过以下方式联系洲杰伦：</p>
         <ul>
@@ -157,8 +261,66 @@
           <li>电话：188-8888-8888</li>
           <li>微信：oxoook</li>
         </ul>
+
+        <!-- 社交媒体链接 -->
+        <div class="social-links">
+          <a href="https://weixin.qq.com" target="_blank">微信</a>
+          <a href="https://www.behance.net" target="_blank">Behance</a>
+          <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+
+        <!-- 联系表单 -->
+        <form class="contact-form">
+          <label for="name">姓名：</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">电子邮件：</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">留言：</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <input type="submit" value="发送">
+        </form>
       </section>
     </div>
   </main>
+
+  <footer>
+    <p>&copy; 2024 洲杰伦. 版权所有.</p>
+  </footer>
+
+  <script>
+    // 图像轮播功能
+    const carouselImages = document.querySelector('.carousel-images');
+    const images = document.querySelectorAll('.carousel img');
+    const prevButton = document.getElementById('prevBtn');
+    const nextButton = document.getElementById('nextBtn');
+    let counter = 0;
+    const size = images[0].clientWidth;
+
+    nextButton.addEventListener('click', () => {
+      if (counter >= images.length - 1) counter = -1;
+      carouselImages.style.transition = "transform 0.5s ease-in-out";
+      counter++;
+      carouselImages.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    });
+
+    prevButton.addEventListener('click', () => {
+      if (counter <= 0) counter = images.length;
+      carouselImages.style.transition = "transform 0.5s ease-in-out";
+      counter--;
+      carouselImages.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    });
+
+    // 导航栏链接激活状态切换
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+  </script>
 </body>
 </html>
