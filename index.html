@@ -3,54 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>洲杰伦个人网站</title>
+  <title>洲杰伦个人网站 - 关于我</title>
   <style>
-    /* 在这里添加CSS样式 */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f4f4f4;
     }
-    header {
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+    header, footer {
       background-color: #333;
       color: #fff;
-      padding: 10px 20px;
       text-align: center;
+      padding: 10px 0;
     }
-    nav {
-      background-color: #ddd;
-      padding: 10px 20px;
-    }
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: space-around;
-    }
-    nav ul li {
-      display: inline;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: #333;
-    }
-    nav ul li a:hover {
-      color: #ff6600;
-    }
-    main {
+    .profile-section {
+      margin-top: 20px;
       padding: 20px;
       background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 10px 20px;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
+    .section-title {
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .section-content {
+      line-height: 1.6;
+    }
+    .section-content p {
+      margin-bottom: 15px;
+    }
+    .contact-info {
+      list-style: none;
+      padding: 0;
+    }
+    .contact-info li {
+      margin-bottom: 10px;
     }
   </style>
 </head>
@@ -58,41 +53,30 @@
   <header>
     <h1>洲杰伦个人网站</h1>
   </header>
-  <nav>
-    <ul>
-      <li><a href="index.html">首页</a></li>
-      <li><a href="design_works.html">设计作品</a></li>
-      <li><a href="about.html">关于洲杰伦</a></li>
-      <li><a href="contact.html">联系方式</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section>
-      <h2>个人介绍</h2>
-      <p>洲杰伦，一位充满创意的品牌设计师，拥有超过十年的专业经验。他的设计作品融合了创新思维与市场洞察力，为众多知名品牌打造出独特且具有辨识度的形象。洲杰伦对设计的每一个细节都追求完美，他的作品不仅在视觉上令人印象深刻，更在商业上为品牌带来显著的成功。</p>
-      <p>洲杰伦的设计理念深受多元文化的影响。他热爱旅行，喜欢从世界各地的艺术和自然中汲取灵感，这使得他的设计作品充满了多样性和国际化视野。他的设计风格既现代又不失传统韵味，能够巧妙地将文化元素与现代审美相结合。</p>
-      <p>除了在设计领域的成就，洲杰伦也热衷于教育和分享。他经常在各大设计论坛和学校进行讲座，传授他的设计经验和理念，激励新一代设计师勇于创新和探索。</p>
+  
+  <div class="container">
+    <section class="profile-section">
+      <h2 class="section-title">个人简介</h2>
+      <div class="section-content">
+        <p>洲杰伦，资深品牌设计师，拥有超过十年的设计经验。专注于品牌形象设计、视觉传达和用户体验。</p>
+        <p>曾服务于多家知名企业，参与过多个国际品牌的设计项目，作品多次获得设计界大奖。</p>
+      </div>
     </section>
-    <section>
-      <h2>设计作品</h2>
-      <p>洲杰伦的设计作品涵盖了多个领域，包括时尚、科技、餐饮等。他的设计风格独特，能够在保持品牌一致性的同时，赋予每个项目新的生命力。</p>
-    </section>
-    <section>
-      <h2>关于洲杰伦</h2>
-      <p>了解更多关于洲杰伦的背景、设计理念和他对品牌建设的独到见解。</p>
-    </section>
-    <section>
-      <h2>联系方式</h2>
-      <p>如果您有品牌设计需求或想要了解更多，可以通过以下方式联系洲杰伦：</p>
-      <ul>
-        <li>电子邮件：lzlxy@vip.qq.com</li>
-        <li>电话：+86 17512012087</li>
-        <li>微信：oxoook</li>
+    
+    <!-- 其他个人信息部分 -->
+    
+    <section class="contact-section">
+      <h2 class="section-title">联系方式</h2>
+      <ul class="contact-info">
+        <li><strong>电子邮件：</strong>lzlxy@vip.qq.com</li>
+        <li><strong>电话：</strong>+86 17512012087</li>
+        <li><strong>微信：</strong>oxoook</li>
       </ul>
     </section>
-  </main>
+  </div>
+  
   <footer>
-    &copy; 2024 洲杰伦个人网站
+    <p>&copy; 2024 洲杰伦. 版权所有。</p>
   </footer>
 </body>
 </html>
